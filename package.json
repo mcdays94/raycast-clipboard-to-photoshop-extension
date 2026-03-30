@@ -1,0 +1,38 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "open-in-photoshop",
+  "title": "Open in Photoshop",
+  "description": "Opens the current image on the clipboard in Adobe Photoshop",
+  "icon": "icon.png",
+  "author": "miguelcaetanodias",
+  "categories": ["Design Tools", "Productivity"],
+  "license": "MIT",
+  "platforms": ["macOS"],
+  "commands": [
+    {
+      "name": "open-in-photoshop",
+      "title": "Open Clipboard Image in Photoshop",
+      "description": "Opens the current image on the clipboard in Adobe Photoshop",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.93.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "22.13.1",
+    "@types/react": "19.0.8",
+    "eslint": "^8.57.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"Error: no publish\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}

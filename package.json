@@ -24,11 +24,11 @@
   "preferences": [
     {
       "name": "photoshopApp",
-      "title": "Photoshop Application",
-      "description": "Override the target app. Leave empty to auto-detect the latest installed version. Accepts an app name (e.g. \"Adobe Photoshop 2025\") or a full path (e.g. \"/Applications/Adobe Photoshop 2025/Adobe Photoshop 2025.app\").",
+      "title": "Target Application",
+      "description": "Override which application opens the clipboard image. Leave empty to auto-detect the latest Photoshop. Accepts any app name (e.g. \"Affinity Photo 2\", \"Adobe Photoshop 2025\") or a full path (e.g. \"/Applications/Pixelmator Pro.app\").",
       "type": "textfield",
       "required": false,
-      "placeholder": "Auto-detect (latest version)"
+      "placeholder": "Auto-detect (latest Photoshop)"
     }
   ],
   "dependencies": {

@@ -8,7 +8,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 
 type ExtensionPreferences = {
-  /** Photoshop Application - Override the target app. Leave empty to auto-detect the latest installed version. Accepts an app name (e.g. "Adobe Photoshop 2025") or a full path (e.g. "/Applications/Adobe Photoshop 2025/Adobe Photoshop 2025.app"). */
+  /** Target Application - Override which application opens the clipboard image. Leave empty to auto-detect the latest Photoshop. Accepts any app name (e.g. "Affinity Photo 2", "Adobe Photoshop 2025") or a full path (e.g. "/Applications/Pixelmator Pro.app"). */
   "photoshopApp"?: string
 }
 

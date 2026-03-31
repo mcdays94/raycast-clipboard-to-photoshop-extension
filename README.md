@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon.png" width="128" height="128" alt="Clipboard to Photoshop icon" />
+</p>
+
 # Clipboard to Photoshop
 
 A [Raycast](https://raycast.com) extension that opens the current clipboard image directly in Adobe Photoshop.

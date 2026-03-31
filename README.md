@@ -4,7 +4,7 @@
 
 # Clipboard to Photoshop
 
-A [Raycast](https://raycast.com) extension that opens the current clipboard image directly in Adobe Photoshop.
+A [Raycast](https://raycast.com) extension that opens the current clipboard image directly in Adobe Photoshop or another image editing application.
 
 ## Usage
 

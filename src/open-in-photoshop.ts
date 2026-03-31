@@ -86,9 +86,8 @@ export default async function OpenInPhotoshop() {
   // If the user set a manual override, try that directly
   if (manualApp) {
     try {
-      // Support both app names ("Adobe Photoshop 2025") and full paths ("/Applications/...")
-      const flag = manualApp.endsWith(".app") ? "" : "-a ";
-      const { stderr } = await execAsync(`open ${flag}"${manualApp}" "${imagePath}"`);
+      // -a works with both app names ("Adobe Photoshop 2025") and full paths ("/Applications/...")
+      const { stderr } = await execAsync(`open -a "${manualApp}" "${imagePath}"`);
       if (!stderr) {
         const displayName =
           manualApp
@@ -116,7 +115,7 @@ export default async function OpenInPhotoshop() {
     // Try each detected app (already sorted newest-first)
     for (const appPath of detectedApps) {
       try {
-        const { stderr } = await execAsync(`open "${appPath}" "${imagePath}"`);
+        const { stderr } = await execAsync(`open -a "${appPath}" "${imagePath}"`);
         if (!stderr) {
           const displayName =
             appPath
